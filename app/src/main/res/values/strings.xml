@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CameraWithPicture</string>
+    <string name="titleA">Fragment One</string>
+    <string name="titleB">Fragment Two</string>
+</resources>
