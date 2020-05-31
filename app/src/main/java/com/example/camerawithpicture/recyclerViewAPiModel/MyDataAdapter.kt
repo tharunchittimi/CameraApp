@@ -44,13 +44,14 @@ class MyDataAdapter(private var listItem: ArrayList<ModelWithHeader> = ArrayList
                 val dataItem = listItem[position] as MyDataModel
                 val itemViewHolder = holder as ItemViewHolder
                 itemViewHolder.txtName.text = dataItem.name
-                when {
-                    dataItem.status == 0 -> itemViewHolder.statusImage.visibility =
+
+                when (dataItem.status) {
+                    0 -> itemViewHolder.statusImage.visibility =
                         View.INVISIBLE
-                    dataItem.status == 1 -> itemViewHolder.statusImage.setImageResource(
+                    1 -> itemViewHolder.statusImage.setImageResource(
                         R.drawable.active_status
                     )
-                    dataItem.status == 2 -> itemViewHolder.statusImage.setImageResource(
+                    2 -> itemViewHolder.statusImage.setImageResource(
                         R.drawable.inactive_status
                     )
                 }

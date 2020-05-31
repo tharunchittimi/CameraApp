@@ -34,11 +34,11 @@ class CameraActivity : BaseActivity() {
 
     override fun initView(savedInstanceState: Bundle?) {
         setClickListener()
-        Log.d("onCreate", "OnCreateCalled")
-        if (savedInstanceState==null){
-            profileSetImage.setImageResource(R.drawable.placeholder)
-        }
-        profileSetImage.setImageURI(Uri.parse(MyData.getimage()))
+//        Log.d("onCreate", "OnCreateCalled")
+//        if (savedInstanceState==null){
+//            profileSetImage.setImageResource(R.drawable.placeholder)
+//        }
+//        profileSetImage.setImageURI(Uri.parse(MyData.getimage()))
     }
 
     private fun setClickListener() {
